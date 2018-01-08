@@ -27,8 +27,8 @@ namespace Microsoft.Bot.Sample.SimpleEchoBot
                 PromptDialog.Confirm(
                     context,
                     AfterResetAsync,
-                    "Are you sure you want to reset the count1112222333dddd?",
-                    "Didn't get that1111!",
+                    "Are you sure you want to reset the count1112222333ddddddd?",
+                    "Didn't get that1111ddd!",
                     promptStyle: PromptStyle.Auto);
             }
             else
@@ -44,11 +44,11 @@ namespace Microsoft.Bot.Sample.SimpleEchoBot
             if (confirm)
             {
                 this.count = 1;
-                await context.PostAsync("Reset count1112223333ddd.");
+                await context.PostAsync("Reset count1112223333ddd22.");
             }
             else
             {
-                await context.PostAsync("Did not reset count2222333.");
+                await context.PostAsync("Did not reset count222233322.");
             }
             context.Wait(MessageReceivedAsync);
         }
